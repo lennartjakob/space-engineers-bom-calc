@@ -1,0 +1,84 @@
+/**
+ * @author Lennart Jakob
+ *
+ * Basics Resets
+ *
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: 14pt sans-serif;
+  padding-bottom: 5pt;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ *
+ * Layout
+ *
+ */
+#content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 800px;
+  padding: 20pt;
+  margin: auto;
+}
+
+/**
+ *
+ * Components
+ *
+ */
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20pt;
+  color: #118;
+}
+
+#drop_zone {
+  border: 2px dashed #118;
+  border-radius: 5pt;
+  padding: 40pt 20pt;
+  margin-bottom: 20pt;
+  text-align: center;
+  cursor: pointer;
+  max-width: 400px;
+  width: auto;
+  align-self: center;
+  user-select: none;
+}
+#drop_zone.dragover {
+  background-color: #6AE;
+  color: white;
+}
+#drop_zone.error {
+  border-color: #D33;
+  color: red;
+}
+#drop_zone.error p {
+  color: red;
+}
+
+#drop_zone p {
+  margin: 0;
+  color: #118;
+}
+#drop_zone input {
+  display: none;
+}
