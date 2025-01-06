@@ -4,7 +4,6 @@
   "description": "A new version of the BoM calculator for Space Engineers Blueprints",
   "private": true,
   "scripts": {
-    "build": "node build.js",
     "pack": "npx webpack",
     "generate": "npx tsx src/generate.ts"
   },
