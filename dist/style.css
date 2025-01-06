@@ -12,9 +12,10 @@
   font: 14pt sans-serif;
   padding-bottom: 5pt;
 }
-body {
+body, html {
   font-family: sans-serif;
   line-height: 1.5;
+  padding: 0;
 }
 img {
   max-width: 100%;
@@ -58,8 +59,7 @@ h1 {
   margin-bottom: 20pt;
   text-align: center;
   cursor: pointer;
-  max-width: 400px;
-  width: auto;
+  width: 400px;
   align-self: center;
   user-select: none;
 }
@@ -81,4 +81,11 @@ h1 {
 }
 #drop_zone input {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #drop_zone {
+    padding: 20pt;
+    width: auto;
+  }
 }

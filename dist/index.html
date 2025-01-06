@@ -10,12 +10,32 @@
   <div id="content">
     <h1>Space Engineers BoM Calculator</h1>
     <div id="drop_zone">
+      <input type="file" id="blueprint" name="blueprint" multiple="false">
       <p>Drop blueprint .sbc file here or click to upload</p>
     </div>
-    <p>Enter your blueprint below:</p>
-    <input type="file" id="blueprint" name="blueprint"><br><br>
-    <button id="calculate">Calculate</button>
-    <div id="result"></div>
+    <div id="error"></div>
+    <div id="dlc-list-wrap">
+      <h2>DLC needed:</h2>
+      <div id="dlc-list">
+        <ul>
+          <li>None</li>
+        </ul>
+      </div>
+    </div>
+    <div id="result">
+      <h2>Blocks used:</h2>
+      <div id="block-list">
+        <ul>
+          <li>None</li>
+        </ul>
+      </div>
+      <h2>Components needed:</h2>
+      <div id="component-list">
+        <ul>
+          <li>None</li>
+        </ul>
+      </div>
+    </div>
   </div>
   <script src="bundle.js"></script>
 </body>
