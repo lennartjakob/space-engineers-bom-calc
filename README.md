@@ -1,5 +1,5 @@
-# space-engineers-bom-calc
-A new version of the BoM calculator for Space Engineers Blueprints
+# Space Engineers Blueprint bill of material caluclator
+A new version of the BoM calculator for Space Engineers Blueprints (predecessor and inspiration for this project to be found [here](https://stdrand.com/data/SECalculator/))
 
 **This currently lacks any fancy UI, which is the next step in development!**
 
